@@ -11,6 +11,7 @@ function preload() {
 }
 
 function setup(){
+    platform = new Ground(150,300,300,170);
     var canvas = createCanvas(1200,400);
     engine = Engine.create();
     world = engine.world;
@@ -59,4 +60,5 @@ function draw(){
     log5.display();
 
     bird.display();
+    platform.display();
 }
